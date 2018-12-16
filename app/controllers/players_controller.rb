@@ -78,7 +78,7 @@ before_action :find_user, only: [:edit, :update, :destroy]
       :age,
       :address,
       :uid,
-      positions_attributes:[:name, :sport_id, :sport => [:name]]
+      positions_attributes:[:name, :sport_id, sport_attributes: [:name]]
       )
   end
 
